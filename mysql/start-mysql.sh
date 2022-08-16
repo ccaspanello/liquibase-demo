@@ -1,0 +1,1 @@
+docker run --platform linux/amd64 -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=Welcome1 -d mysql:5.6.51

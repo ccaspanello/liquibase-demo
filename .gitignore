@@ -1,3 +1,7 @@
+.idea/
+.target/
+.jpb/
+
 # Compiled class file
 *.class
 

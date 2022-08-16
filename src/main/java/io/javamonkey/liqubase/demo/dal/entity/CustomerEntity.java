@@ -26,4 +26,13 @@ public class CustomerEntity implements Serializable {
     @Column(nullable = false)
     private String password;
 
+    @Column
+    private String firstName;
+
+    @Column
+    private String lastName;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    private AddressEntity address;
 }
